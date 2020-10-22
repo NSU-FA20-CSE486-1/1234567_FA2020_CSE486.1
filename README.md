@@ -9,6 +9,7 @@ For Example, if your 7 digit student ID is 1911231, then your repository will be
 1911231_FA2020_CSE486.1
 
 Folder Structure:
+
 1911231_FA2020_CSE486.1
 
   |-------- Assignments
