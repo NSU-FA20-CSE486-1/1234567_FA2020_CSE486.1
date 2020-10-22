@@ -24,7 +24,7 @@ Folder Structure:
               
   |-------- Android Project
   
-              |------------- Readme.md
+              |------------- README.md
               
               |------------- Project Code
               
