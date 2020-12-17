@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 int wordListSize = mWordList.size();
                 mWordList.addLast("+ Word " + wordListSize);
                 mRecyclerView.getAdapter().notifyItemInserted(wordListSize);
+                mRecyclerView.smoothScrollToPosition(wordListSize);
             }
         });
 
