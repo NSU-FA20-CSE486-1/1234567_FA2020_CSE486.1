@@ -7,9 +7,6 @@
 
     <TextView
         android:id="@+id/word"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="@string/TextView_ListItem_DefaultValue"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        style="@style/word_title" />
 </LinearLayout>
