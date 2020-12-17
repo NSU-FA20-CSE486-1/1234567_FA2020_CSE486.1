@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ClickableRecyclerView</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_reset">Reset</string>
     <!-- Strings used for fragments for navigation -->
     <string name="TextView_ListItem_DefaultValue">List Item</string>
 </resources>
