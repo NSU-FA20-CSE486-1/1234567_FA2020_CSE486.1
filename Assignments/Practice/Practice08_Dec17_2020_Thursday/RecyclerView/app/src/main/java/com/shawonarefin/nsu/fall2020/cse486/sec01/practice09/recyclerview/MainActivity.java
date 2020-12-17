@@ -10,7 +10,11 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.LinkedList;
+
 public class MainActivity extends AppCompatActivity {
+
+    private final LinkedList<String> mWordList = new LinkedList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        for(int i=0; i<20; i++){
+            mWordList.addLast("Word "+ i);
+        }
     }
 
     @Override
