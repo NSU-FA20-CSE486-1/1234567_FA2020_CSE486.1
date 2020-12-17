@@ -28,8 +28,9 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
     }
 
     @Override
-    public void onBindViewHolder(@NonNull WordViewHolder wordViewHolder, int i) {
-
+    public void onBindViewHolder(@NonNull WordViewHolder wordViewHolder, int position) {
+        String mCurrent = mWordList.get(position);
+        wordViewHolder.wordItemView.setText(mCurrent);
     }
 
     @Override
