@@ -4,8 +4,10 @@ import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordViewHolder> {
+
 
     @NonNull
     @Override
@@ -24,8 +26,14 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
     }
 
     public class WordViewHolder extends RecyclerView.ViewHolder {
-        public WordViewHolder(@NonNull View itemView) {
+
+        public final TextView wordItemView;
+        final WordListAdapter mAdapter;
+        
+        public WordViewHolder(@NonNull View itemView,  WordListAdapter mAdapter) {
             super(itemView);
+            this.wordItemView = itemView.findViewById(R.id.word);
+            this.mAdapter = mAdapter;
         }
     }
 }
