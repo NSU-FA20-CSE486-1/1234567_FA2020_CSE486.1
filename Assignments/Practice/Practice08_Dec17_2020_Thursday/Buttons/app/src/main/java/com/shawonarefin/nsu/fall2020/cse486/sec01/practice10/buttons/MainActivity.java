@@ -1,7 +1,12 @@
 package com.shawonarefin.nsu.fall2020.cse486.sec01.practice10.buttons;
 
+import android.app.Activity;
+import android.support.v4.view.GestureDetectorCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.GestureDetector;
+import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton imageButton;
     private Button borderlessButton;
     private TextView displayActionTextView;
+    private GestureDetectorCompat mDetector;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,5 +93,13 @@ public class MainActivity extends AppCompatActivity {
 
             return returnValue;
         });
+
+        mDetector = new GestureDetectorCompat(borderlessButton.getContext(), new MyGestureListener());
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        this.mDetector.onTouchEvent(event);
+        return super.onTouchEvent(event);
     }
 }
